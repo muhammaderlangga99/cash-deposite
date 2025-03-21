@@ -1,0 +1,45 @@
+﻿Date	Time	Severity	PID	TID	Function	Message
+21-03-2025	10:54:53.723	 INFO	 33840	 25344	DllMain	"DLL_PROCESS_ATTACH Mon Oct  7 21:44:09 2024 11.3.2428.18"
+21-03-2025	10:54:53.740	 INFO	 33840	 25344	DllMain	"PROCESS ATTACHED"
+21-03-2025	10:54:53.743	 INFO	 33840	 22180	LateInitialization	"Intialization..."
+21-03-2025	10:54:53.747	 INFO	 33840	 22180	LoadDisplayDevicesName	"DisplayDevices : "
+21-03-2025	10:54:53.751	 INFO	 33840	 22180	LoadDisplayDevicesName	"\\.\DISPLAY1"
+21-03-2025	10:54:53.754	 INFO	 33840	 22180	LoadDisplayDevicesName	"\\.\DISPLAY2"
+21-03-2025	10:54:53.756	 INFO	 33840	 22180	LoadDisplayDevicesName	"\\.\DISPLAY3"
+21-03-2025	10:54:53.768	ERROR	 33840	 22180	LateInitialization	"std::exception caught = GetFileVersionInfoSizeW failed with 1813
+"
+21-03-2025	10:54:53.771	 INFO	 33840	 22180	LateInitialization	"Exe = C:\Program Files\Git\usr\bin\bash.exe
+ProductName = 
+FileDescription = 
+ShadowFolder = %LOCALAPPDATA%\EndpointDLP\print-shadow
+ParsingMode = Hybrid
+DeletePrinterShadowFiles = 1
+PrinterUseDisplayDevicesList = 0
+EnablePrinterEscapeProcessing = 1
+EnableWatermarkForAll = 0
+MaxPrintPages = 4294967295
+GdiPlusToken = 74625890
+ExcludedEscapes = 4117, 37, 4118, 4115, 4121, "
+21-03-2025	10:54:53.774	 INFO	 33840	 22180	LateInitialization	"Intialization finished"
+21-03-2025	10:55:07.108	 INFO	 34872	  1608	DllMain	"DLL_PROCESS_ATTACH Mon Oct  7 21:44:09 2024 11.3.2428.18"
+21-03-2025	10:55:07.116	 INFO	 34872	  1608	DllMain	"PROCESS ATTACHED"
+21-03-2025	10:55:07.117	 INFO	 34872	 33364	LateInitialization	"Intialization..."
+21-03-2025	10:55:07.120	 INFO	 34872	 33364	LoadDisplayDevicesName	"DisplayDevices : "
+21-03-2025	10:55:07.122	 INFO	 34872	 33364	LoadDisplayDevicesName	"\\.\DISPLAY1"
+21-03-2025	10:55:07.124	 INFO	 34872	 33364	LoadDisplayDevicesName	"\\.\DISPLAY2"
+21-03-2025	10:55:07.126	 INFO	 34872	 33364	LoadDisplayDevicesName	"\\.\DISPLAY3"
+21-03-2025	10:55:07.135	ERROR	 34872	 33364	LateInitialization	"std::exception caught = GetFileVersionInfoSizeW failed with 1813
+"
+21-03-2025	10:55:07.136	 INFO	 34872	 33364	LateInitialization	"Exe = C:\Program Files\Git\usr\bin\bash.exe
+ProductName = 
+FileDescription = 
+ShadowFolder = %LOCALAPPDATA%\EndpointDLP\print-shadow
+ParsingMode = Hybrid
+DeletePrinterShadowFiles = 1
+PrinterUseDisplayDevicesList = 0
+EnablePrinterEscapeProcessing = 1
+EnableWatermarkForAll = 0
+MaxPrintPages = 4294967295
+GdiPlusToken = 74639250
+ExcludedEscapes = 4117, 37, 4118, 4115, 4121, "
+21-03-2025	10:55:07.137	 INFO	 34872	 33364	LateInitialization	"Intialization finished"
