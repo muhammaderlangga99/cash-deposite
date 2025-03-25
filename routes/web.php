@@ -20,6 +20,9 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/permission/{id}/update', [PermissionController::class, 'update'])->name('permission.update');
     Route::delete('/permission/{id}/delete', [PermissionController::class, 'destroy'])->name('permission.delete');
     Route::get('/permission/show/{id}', [PermissionController::class, 'show'])->name('permission.show');
+    Route::get('/test-admin', function () {
+        return 'THIS IS ADMIN AREA';
+    })->middleware(['auth', 'role:admin']);
 });
 
 require __DIR__ . '/settings.php';
