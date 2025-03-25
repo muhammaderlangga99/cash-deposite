@@ -15,13 +15,10 @@ class RolePermissionSeeder extends Seeder
      */
     public function run(): void
     {
-        $admin = ModelsRole::create(['name' => 'admin']);
-        $editor = ModelsRole::create(['name' => 'editor']);
+        Role::create(['name' => 'admin']); // create role admin
+        Role::create(['name' => 'editor']); // create role editor
     
-        $createPost = Permission::create(['name' => 'create_post']);
-        $editPost = Permission::create(['name' => 'edit_post']);
-    
-        $admin->givePermissionTo([$createPost, $editPost]);
-        $editor->givePermissionTo($editPost);
+        Permission::create(['name' => 'create_post']); // create permission create_post
+        Permission::create(['name' => 'edit_post']); // create permission edit_post
     }
 }
