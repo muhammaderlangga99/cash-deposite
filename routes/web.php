@@ -4,6 +4,7 @@ use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Laravel\Socialite\Facades\Socialite;
 use App\Http\Controllers\PermissionController;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return Inertia::render('welcome');
@@ -23,6 +24,13 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/test-admin', function () {
         return 'THIS IS ADMIN AREA';
     })->middleware(['auth', 'role:admin']);
+
+    // roles to user
+    Route::get('/users', [UserController::class, 'index'])->name('users.index');
+    Route::get('/users/{user}/edit-roles', [UserController::class, 'editRoles'])->name('users.roles.edit');
+    Route::post('/users/{user}/roles', [UserController::class, 'updateRoles'])
+    ->name('users.roles.update');
+    // Route::put('/users/{user}/update-roles', [UserController::class, 'updateRoles'])->name('users.roles.update');
 });
 
 require __DIR__ . '/settings.php';
